@@ -1,4 +1,5 @@
 # Angular 2 com Ruby on Rails.
+
 ## Tutorial baseado no [Tour of Heroes](https://angular.io/docs/ts/latest/tutorial/) do angular.io
 
 Tour of Heroes simula requisições em uma web API com angular-in-memory-web-api.
@@ -40,17 +41,13 @@ A estrutura final do app Tour of Heroes é essa:
  * systemjs.config.js
  * tsconfig.json
 
-# RAILS
-Criando um novo projeto, modificando os arquivos necessários até chegar na integração do Angular, você poderá
-seguir esse [post](http://tutorials.pluralsight.com/ruby-ruby-on-rails/react-vs-angular-2-integration-with-rails)
-
-Testado e aprovado!
-
-Porém, quando chegar na parte do Angular, temos que fazer da seguinte maneira:
+## RAILS
+Siga esse [post](http://tutorials.pluralsight.com/ruby-ruby-on-rails/react-vs-angular-2-integration-with-rails) até
+o começo da integração e quando chegar na parte do Angular, vamos fazer da seguinte maneira:
 
 **Tendo como base o app Tour of Heroes**
 
-# NODE
+## NODE
 **ALERTA: Evite copiar e colar todo o projeto angular para o projeto em Ruby on Rails.
 Vamos fazer por partes!**
 
@@ -83,7 +80,3 @@ Feito tudo isso, execute:
 
 ### Terminal
 > npm run tsc && rails s
-
-npm run tsc ->  **Compila o projeto angular**
-
-rails s -> **Inicia o server**

@@ -8,21 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
+var core_1 = require("@angular/core");
+var http_1 = require("@angular/http");
 var HeroSearchService = (function () {
     function HeroSearchService(http) {
         this.http = http;
     }
     HeroSearchService.prototype.search = function (term) {
-        return this.http.get("app/heroes/?name=" + term)
-            .map(function (r) { return r.json().data; });
+        return this.http.get("api/heroes/?name=" + term)
+            .map(function (r) { return r.json(); });
     };
-    HeroSearchService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], HeroSearchService);
     return HeroSearchService;
 }());
+HeroSearchService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], HeroSearchService);
 exports.HeroSearchService = HeroSearchService;
 //# sourceMappingURL=hero-search.service.js.map
