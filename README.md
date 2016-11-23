@@ -43,7 +43,7 @@ A estrutura final do app Tour of Heroes é essa:
 
 ## RAILS
 Siga esse [post](http://tutorials.pluralsight.com/ruby-ruby-on-rails/react-vs-angular-2-integration-with-rails) até
-o começo da integração e quando chegar na parte do Angular, vamos fazer da seguinte maneira:
+o começo da integração com o Angular, daí vamos fazer da seguinte maneira:
 
 **Tendo como base o app Tour of Heroes**
 
@@ -59,7 +59,7 @@ Copie e cole os arquivos **tsconfig.json** e **package.json** na raiz do projeto
 Isso irá instalar todos os módulos do app.
 Agora, copie e cole os arquivos index.html, styles.css, systemjs.config.js para dentro da pasta public.
 
-Modifique o index.html
+Modifique o **index.html**
 
     code
     ...
