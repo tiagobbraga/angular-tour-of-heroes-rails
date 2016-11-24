@@ -8,21 +8,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
+var angular2_token_service_1 = require("angular2-token.service");
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(_tokenService) {
+        this._tokenService = _tokenService;
         this.title = 'Tour of Heroes';
+        this._tokenService.init();
+        console.log('logged ' + this._tokenService.userSignedIn());
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'my-app',
-            template: "\n              <h1>{{title}}</h1>\n              <nav>\n                <a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n                <a routerLink=\"/heroes\" routerLinkActive=\"active\">Heroes</a>\n              </nav>\n              <router-outlet></router-outlet>\n          ",
-            styleUrls: ['app.component.css'],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
     return AppComponent;
 }());
+AppComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'my-app',
+        template: "\n              <h1>{{title}}</h1>\n              <nav>\n                <a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n                <a routerLink=\"/heroes\" routerLinkActive=\"active\">Heroes</a>\n              </nav>\n              <router-outlet></router-outlet>\n          ",
+        styleUrls: ['app.component.css'],
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof angular2_token_service_1.Angular2TokenService !== "undefined" && angular2_token_service_1.Angular2TokenService) === "function" && _a || Object])
+], AppComponent);
 exports.AppComponent = AppComponent;
+var _a;
 //# sourceMappingURL=app.component.js.map

@@ -14,6 +14,8 @@ import { HeroService } from './hero.service';
 
 import './rxjs-extensions';
 
+import { Angular2TokenService } from 'angular2-token.service';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -28,7 +30,7 @@ import './rxjs-extensions';
     DashboardComponent,
     HeroSearchComponent
   ],
-  providers: [ HeroService ],
+  providers: [ HeroService, Angular2TokenService ],
   bootstrap: [ AppComponent ]
 })
 

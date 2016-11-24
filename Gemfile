@@ -1,7 +1,11 @@
-gem 'rails' 
+gem 'rails'
 gem 'sqlite3'
 gem 'sprockets'
 gem 'rack-cors'
+
+gem 'omniauth'
+gem 'devise_token_auth'
+gem 'omniauth-github'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

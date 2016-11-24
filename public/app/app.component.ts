@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { Angular2TokenService } from 'angular2-token.service';
+
 @Component({
   moduleId: module.id,
   selector: 'my-app',
@@ -16,4 +18,10 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Tour of Heroes';
+
+  constructor(private _tokenService: Angular2TokenService) {
+    this._tokenService.init();
+
+    console.log('logged '+this._tokenService.userSignedIn());
+  }
 }
