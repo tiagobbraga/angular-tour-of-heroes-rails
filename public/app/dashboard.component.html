@@ -7,3 +7,41 @@
   </a>
 </div>
 <hero-search></hero-search>
+<hr><br><br>
+<form #registerForm="ngForm" (ngSubmit)="onSubmit()">
+	<div class="form-group">
+		<label for="formGroupExampleInput">Email</label>
+		<input type="text"
+			class="form-control"
+			placeholder="Email"
+			required
+			[(ngModel)]="_registerData.email"
+			name="email">
+	</div>
+	<div class="form-group">
+		<label for="formGroupExampleInput">Password</label>
+		<input type="password"
+			class="form-control"
+			placeholder="Password"
+			required
+			[(ngModel)]="_registerData.password"
+			name="password">
+	</div>
+	<div class="form-group">
+		<label for="formGroupExampleInput">Password Confirmation</label>
+		<input type="password"
+			class="form-control"
+			placeholder="Password Confirmation"
+			required
+			[(ngModel)]="_registerData.password_confirmation"
+			name="password_confirmation">
+	</div>
+	<button
+		type="submit"
+		class="btn btn-primary"
+		[disabled]="!registerForm.form.valid">Register</button>
+</form>
+
+<br>
+
+<!-- <output [data]="_output"></output> -->

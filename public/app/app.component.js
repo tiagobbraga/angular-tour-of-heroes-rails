@@ -15,7 +15,7 @@ var AppComponent = (function () {
         this._tokenService = _tokenService;
         this.title = 'Tour of Heroes';
         this._tokenService.init();
-        console.log('logged ' + this._tokenService.userSignedIn());
+        console.log('LOGGED :: ' + this._tokenService.userSignedIn());
     }
     return AppComponent;
 }());

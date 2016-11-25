@@ -22,6 +22,6 @@ export class AppComponent {
   constructor(private _tokenService: Angular2TokenService) {
     this._tokenService.init();
 
-    console.log('logged '+this._tokenService.userSignedIn());
+    console.log('LOGGED :: '+this._tokenService.userSignedIn());
   }
 }
